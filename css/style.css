@@ -120,6 +120,9 @@ header{
     flex-direction: column;
     color: white;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
 .headerTitle h1{
@@ -329,7 +332,9 @@ footer::before{
 header.header-sm{
     min-height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/places/destination1.jpg) center/ cover no-repeat;
-
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
 .album-item{
@@ -505,8 +510,9 @@ header.header-sm{
 header.header-blog{
     min-height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/blog/blog1.jpg) center/ cover no-repeat;
-
+    background-attachment: scroll; 
 }
+
 
 #blog{
     background-color: lightgray;
@@ -570,7 +576,8 @@ header.header-blog{
 header.header-about{
     min-height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/aboutus/aboutheader.jpg) center/ cover no-repeat;
-
+    background-position: center;
+    background-size: cover;
 }
 
 .about-right{
@@ -635,6 +642,14 @@ header.header-about{
 
 
 /* Contact Page */
+header.header-contact{
+    min-height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/contact/contact1.jpg) center/ cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
 .contact-form .form-control{
     border: 1px solid rgba(0,0,0,0.1);
     color: black;
@@ -680,11 +695,7 @@ header.header-about{
     width: 100%;
 }
 
-header.header-contact{
-    min-height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/contact/contact1.jpg) center/ cover no-repeat;
 
-}
 
 
 
