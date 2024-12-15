@@ -1,8 +1,40 @@
 :root{
-    --trans: all 0.3s ease-in-out;
-    --light-grey: #f7f7f7;
-    --dark: #0e1010;
+    --transitionition: all 0.3s ease-in-out;
     --darkblue: rgb(5, 30, 49);
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+  
+body {
+   margin: 0;
+}
+  
+
+html, body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button, input[type = "submit"]{
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navbar{
@@ -32,7 +64,7 @@
     color: white;
     font-size: 2rem;
     opacity: 0.9;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 #navbarShowBtn:hover{
@@ -49,7 +81,7 @@
     height: 100%;
     padding: 2rem;
     transform: translateX(100%);
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .navbarToggle-rmw{
@@ -64,7 +96,7 @@
     height: 35px;
     border-radius: 0.2rem;
     font-size: 2rem;
-    transition: var(--trans);
+    transition: var(--transition);
     position: absolute;
     right: 1rem;
     top: 2rem;
@@ -87,7 +119,7 @@
 .navLink{
     color: white;
     font-size: 1.2rem;
-    transition: var(--trans);
+    transition: var(--transition);
     cursor: pointer;
     position: relative;
 }
@@ -160,7 +192,7 @@ header{
 .navbar-scroll{
     background-color: white;
     box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .navbar-scroll img{
@@ -174,13 +206,96 @@ header{
 
 
 /* Destination */
+.py-4{
+    padding: 4rem 0;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.titleWrap{
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tg-title{
+    font-size: 1.8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sm-title{
+    display: block;
+    color: #787878;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.7;
+}
+
+.my-2{
+    margin: 2rem 0;
+}
+
+.shadow:hover{
+    box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+}
+
+.container{
+    max-width: 1320px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control{
+    width: 100%;
+    margin: 0.6rem 0;
+    max-width: 500px;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 0.7rem 2.4rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    background-color: rgb(10, 141, 184);
+    color: white;
+    border: 1px solid rgb(10, 141, 184);
+}
+
+.btn:hover{
+    opacity: 0.9;
+    transition: var(--trans);
+}
+
 .destination-item{
     border-radius: 10px;
     position: relative;
     width: 100%;
     margin: auto;
     overflow: hidden;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 
@@ -203,8 +318,8 @@ header{
     color: white;
     width: 100%;
     padding: 1rem;
-    transform: translateY(74%);
-    transition: var(--trans);
+    transform: translateY(73%);
+    transition: var(--transition);
 }
 
 .destination-item-content span{
@@ -220,7 +335,7 @@ header{
 
 .destination-item-content .text{
     color: white;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 
@@ -264,7 +379,7 @@ footer::before{
 .footer-item a{
     font-size: 1.2rem;
     color: white;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .footer-item a:hover{
@@ -314,7 +429,7 @@ footer::before{
 
 .subscribe-form .form-control{
     border-color: rgba(255, 255, 255, 0.3);
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .subscribe-form .form-control:focus{
@@ -341,7 +456,7 @@ header.header-sm{
     margin: 2rem 0;
     overflow: hidden;
     position: relative;
-    transition: var(--trans);
+    transition: var(--transition);
     cursor: pointer;
 }
 
@@ -357,7 +472,7 @@ header.header-sm{
 }
 
 .album-item img{
-    transition:var(--trans);
+    transition:var(--transition);
 }
 
 .album-item:hover img{
@@ -373,7 +488,7 @@ header.header-sm{
     color: white;
     z-index: 2;
     opacity: 0;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .album-item:hover .zoom-icon{
@@ -413,7 +528,7 @@ header.header-sm{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    transition: var(--trans);
+    transition: var(--transition);
     border: none;
 }
 
@@ -457,7 +572,7 @@ header.header-sm{
     position: relative;
     cursor: pointer; 
     overflow: hidden;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .top-item::after{
@@ -478,7 +593,7 @@ header.header-sm{
     z-index: 2;
     bottom: -100%;
     padding: 2rem;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .top-item .rating{
@@ -520,7 +635,7 @@ header.header-blog{
 
 .blog-item{
     background-color: white;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .blog-item-top{
@@ -560,7 +675,7 @@ header.header-blog{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 1.6;
-    transition: var(--trans);
+    transition: var(--transition);
 }
 
 .blog-item-bottom a:hover{
